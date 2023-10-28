@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+/*---RESET--*/
+
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Shadows Into Light', cursive;
+}
+/*---HEADER---*/
+header {
+    position: sticky;
+    top: 0;
+}
+.menu{
+    background-color: rgb( 41, 23, 143);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.nav-item a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.dropdown-menu{
+    background-color: rgb( 41, 23, 143);
+}
+
+
+/*----MAIN----*/
+
+/*---Inicio---*/
+
+.biode {
+    height: 170px;
+    width: 100%;
+    background-image: url("../img/bio.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20%;
+    border-bottom:  3px solid rgb(41, 23, 143);
+}
+.biode h2 {
+    color: rgb(25, 114, 136);
+    font-size: 60px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.biode h3 {
+    font-size: 25px;
+    color: rgb(5, 22, 179);
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.para {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center
+    center fixed;
+    background-size: cover;
+}
+
+
+.para div   {
+    width: 800px;
+}
+.para h2 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.para h3 {
+    font-size: 22px;
+}
+
+.para p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.para img {
+    height: 700px;
+    width: 500px;
+}
+
+.notas h3{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: rgb( 41, 23, 143);
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0)
+}
+
+.notas-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.notas-flex {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(138, 135, 136);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.notas-flex img {
+    height: 200px;
+    width: 250px;
+    margin: 5px;
+}
+
+.notas-flex a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 25px;
+}
+.fixed {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+}
+
+
+/*---Nosotros---*/
+.nosotros {
+    height: 170px;
+    width: 100%;
+    background-image: url("../img/nosotros.jpg");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom:  3px solid rgb(41, 23, 143);
+}
+
+
+.nosotros h2 {
+    color: rgb(25, 114, 136);
+    font-size: 60px;
+    font-weight: 30;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.nos-container{
+    background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center
+    center fixed;
+    background-size: cover;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.parrafo {
+    font-size: 20px;
+    text-align: center;
+    width: 75%;
+    margin: 20px;
+
+}
+
+.carousel-inner {
+    margin-bottom: 30px;
+}
+
+.carousel-inner div img {
+    width: 350px;
+    height: 350px;
+}
+
+
+
+/*----Historia----*/
+
+
+.historia {
+    height: 170px;
+    width: 100%;
+    background-image: url("../img/historia.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom:  3px solid rgb(41, 23, 143);
+}
+
+.historia h2 {
+    color: rgb(25, 114, 136);
+    font-size: 60px;
+    font-weight: 30;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;   
+}
+
+.historia-container {
+    background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center
+    center fixed;
+    background-size: cover;
+    margin: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.historia-2 {
+    text-align: center;
+    margin: 50px;
+}
+
+.historia-2 h2 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.historia-2 p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 30px;
+}
+
+/*--Experiencias--*/
+
+.exp {
+    height: 170px;
+    width: 100%;
+    background-image: url("../img/exp.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom:  3px solid rgb(41, 23, 143);
+}
+
+.exp h2 {
+    color: rgb(25, 114, 136);
+    font-size: 60px;
+    font-weight: 30;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.videos {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center
+    center fixed;
+    background-size: cover;
+    margin: 30px;
+}
+.exp-1 {
+    border: 2px solid black;
+    height: 610px;
+    width: 600px;
+    margin: 50px;
+    text-align: center;
+
+}
+.exp-1 iframe {
+    margin: 10px;
+    width: 480px; 
+    height: 315px
+}
+.exp-1 h3{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.exp-1  p {
+    font-size: 20px;
+    margin: 5px;
+
+}
+
+
+.exp-2 {
+    text-align: center;
+    width: 900px;
+    margin: 50px;
+}
+
+/*---Contacto--*/
+
+.contact-us {
+    height: 170px;
+    width: 100%;
+    background-image: url("../img/contacto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom:  3px solid rgb(41, 23, 143);
+}
+
+.contact-us h2  {
+    color: rgb(25, 114, 136);
+    font-size: 60px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.contacto-container {
+    background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center
+    center fixed;
+    background-size: cover;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-rows: 30% 30% 30% 30%;
+}
+
+.contacto-container div {
+    margin: 20px;
+}
+
+.formulario {
+    grid-row: 1 / 4;
+    background-color: rgb(206, 214, 216);
+    text-align: center;
+    border: dashed 5px rgb(25, 114, 136);
+    border-radius: 3px;
+    height: 500px;
+}
+.mb-3 label{
+    font-size: 20px;
+}
+.mb-3 input {
+    border: solid 2px rgb(0, 0, 0);
+}
+
+.mb-3 textarea {
+    border: solid 2px rgb(0, 0, 0);
+}
+
+.texto {
+    grid-column: 2 / 4;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 350px;
+    padding-top: 50px;
+}
+
+.mapa {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mapa iframe {
+    width: 500px;
+    height: 500px;
+    padding-bottom: 20px;
+}
+
+
+.mapa p{
+    font-size: 20px;
+    text-align: center;
+}
+
+/*---FOOTER---*/
+
+footer {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.derechos h4 {
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    margin: 10px;
+}
+
+.redes a img {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+
+/*--- MEDIA QUERIES ---*/
+@media screen and (max-width:900px){
+    .biode h3 {
+        font-size: 15px;
+        color: rgb(5, 22, 179);
+        text-align: center;
+    }
+    .contacto-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50%;
+    }
+    .contacto-container div{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .mapa iframe {
+        width: 450px;
+        height: 350px;
+    }
+    .exp h2 {
+        font-size: 55px;
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .para div p{
+        padding: 10px;
+    }
+    .parrafo {
+        font-size: 18px;
+    }
+    .mapa iframe {
+        width: 350px;
+        height: 350px;
+    }
+    .texto p{
+        font-size: 17px;
+    }
+    
+}
+@media screen and (max-width:800px){
+    .exp h2{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:790px){
+    .biode h3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:745px) {
+    .biode h3{
+        font-size: 21px;
+        }
+    
+}
+
+@media screen and (max-width:700px) {
+    header h1 {
+        font-size: 18px;
+        margin: 5px;
+    }
+    header nav {
+        font-size: 16px;
+    }
+    header nav ul li {
+        margin: 8px;
+    }
+    .biode {
+        height: 100px;
+        width: 100%;
+        border-bottom:  3px solid rgb(41, 23, 143);
+        background-image: none;
+    }
+    .biode h2 {
+        font-size: 45px;
+    }
+    .biode h3 {
+        font-size: 18px;
+    }
+    .para h2 {
+        font-size: 22px;
+        text-decoration: underline;
+    }
+    
+    .para h3 {
+        font-size: 20px;
+    }
+    
+    .para p {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    .derechos h4{
+        font-size: 20px;
+    }
+    .historia{
+        height: 100px;
+        width: 100%;
+    }
+    .historia h2{
+        font-size: 45px;
+    }
+    .exp{
+        height: 100px;
+        width: 100%;
+    }
+    .exp h2{
+        font-size: 38px;
+    }
+    .nosotros{
+        height: 100px;
+        width: 100%;
+    }
+    .nosotros h2{
+        font-size: 45px;
+    }
+    .contact-us{
+        height: 100px;
+        width: 100%;
+    }
+    .contact-us h2{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .historia-2 h2 {
+        font-size: 22px;
+    }
+    
+    .historia-2 p {
+        font-size: 18px;
+        margin: 15px;
+    }
+    .para img {
+        height: 550px;
+        width: 350px;
+    }
+    .exp-1 {
+        height: 560px;
+        width: 550px;
+    }
+    .exp-1 iframe {
+        width: 430px; 
+        height: 265px
+    }
+    .exp-1 h3{
+        font-size: 22px;
+    }
+    
+    .exp-1  p {
+        font-size: 17px;
+    }
+    .exp-2 p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:585px) {
+    footer {
+        flex-direction: column;
+    }
+    .fixed{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:550px){
+    .para img {
+        height: 650px;
+        width: 450px;
+    }
+    .exp-1 {
+        height: 510px;
+        width: 500px;
+    }
+    .exp-1 iframe {
+        width: 390px; 
+        height: 200px
+    }
+    .exp-1 h3{
+        font-size: 19px;
+    }
+    
+    .exp-1  p {
+        font-size: 15px;
+    }
+    .exp-2 p {
+        font-size: 15px;
+    }
+    .carousel-inner div img {
+        width: 300px;
+        height: 300px;
+    }
+    .formulario {
+        width: 90%;
+        height: 90%;
+    }
+    .mapa iframe {
+        width: 280px;
+        height: 280px;
+    }
+    .mapa p{
+        font-size: 15px;
+    }
+    .texto p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .para img {
+        height: 480px;
+        width: 280px;
+    }
+    .historia-2{
+        margin: 20px;
+    }
+    .historia-2 h2 {
+        font-size: 20px;
+    }
+    
+    .historia-2 p {
+        font-size: 17px;
+    }
+    .exp h2{
+        font-size: 32px;
+    }
+    .exp-1 {
+        height: 470px;
+        width: 450px;
+    }
+    .exp-1 iframe {
+        width: 350px; 
+        height: 220px
+    }
+}
+
+@media screen and (max-width:450px){
+    .exp-1 {
+        height: 520px;
+        width: 400px;
+    }
+    .exp-1 iframe {
+        width: 300px; 
+        height: 220px
+    }
+    .parrafo p{
+        font-size: 17px;
+    }
+    .carousel-inner div img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .derechos h4{
+        font-size: 18px;
+    }
+    .notas-flex img {
+        height: 150px;
+        width: 200px;
+    }
+    
+    .notas-flex a {
+        font-size: 20px;
+    }
+    .historia-2 h2 {
+        font-size: 17px;
+    }
+    
+    .historia-2 p {
+        font-size: 14px;
+    }
+    .exp h2{
+        font-size: 32px;
+    }
+    .exp-1 {
+        height: 540px;
+        width: 300px;
+    }
+    .exp-1 iframe {
+        width: 90%; 
+        height: 100px;
+    }
+    .parrafo p{
+        font-size: 15px;
+    }
+    .carousel-inner div img {
+        width: 230px;
+        height: 230px;
+    }
+    .formulario {
+        width: 85%;
+    }
+    .mb-3 label{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:370px){
+    .formulario{
+        height: 500px;
+    }
+    .mapa iframe{
+        display: none;
+    }
+}
