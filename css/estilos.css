@@ -1,0 +1,566 @@
+/*----VARIABLES----*/
+/*----MIXIN---*/
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+/*---RESET--*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Shadows Into Light', cursive; }
+
+header {
+  position: sticky;
+  top: 0; }
+  header .menu {
+    background-color: #29178f; }
+    header .menu div a {
+      font-size: 1.5rem;
+      color: white; }
+    header .menu div div ul li a {
+      color: white;
+      font-size: 20px; }
+    header .menu div div ul li ul {
+      background-color: #29178f; }
+
+/*----INDEX----*/
+main .biode {
+  height: 170px;
+  width: 100%;
+  background-image: url("../img/bio.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20%;
+  border-bottom: 3px solid #29178f; }
+  main .biode h2 {
+    color: #197288;
+    font-size: 60px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline; }
+  main .biode h3 {
+    font-size: 25px;
+    color: #0516b3;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 300px; }
+
+main .para {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center center fixed;
+  background-size: cover; }
+  main .para div {
+    width: 800px; }
+    main .para div h2 {
+      font-size: 25px;
+      text-decoration: underline; }
+    main .para div h3 {
+      font-size: 22px; }
+    main .para div p {
+      text-align: justify;
+      font-size: 20px; }
+  main .para img {
+    height: 700px;
+    width: 500px; }
+
+main .notas h3 {
+  color: white;
+  font-size: 20px;
+  background-color: #29178f;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 2px solid black; }
+
+main .notas .notas-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  main .notas .notas-container .notas-flex {
+    border: 2px solid black;
+    background-color: #8a8788;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s; }
+    main .notas .notas-container .notas-flex:hover {
+      transform: scale(1.1);
+      box-shadow: 8px 10px 9px 0px rgba(0, 0, 0, 0.57);
+      -webkit-box-shadow: 8px 10px 9px 0px rgba(0, 0, 0, 0.57);
+      -moz-box-shadow: 8px 10px 9px 0px rgba(0, 0, 0, 0.57); }
+    main .notas .notas-container .notas-flex img {
+      height: 200px;
+      width: 250px;
+      margin: 5px; }
+    main .notas .notas-container .notas-flex a {
+      color: white;
+      text-decoration: none;
+      font-size: 25px; }
+
+main .fixed {
+  position: fixed;
+  bottom: 100px;
+  right: 50px; }
+
+/*--- HISTORIA ----*/
+main .historia {
+  height: 170px;
+  width: 100%;
+  background-image: url("../img/historia.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 3px solid #29178f; }
+  main .historia h2 {
+    color: #197288;
+    font-size: 60px;
+    font-weight: 30;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline; }
+
+main .historia-container {
+  background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  animation: myAnim2 2s ease 0s 1 normal none; }
+
+@keyframes myAnim2 {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(250px); }
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0); }
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0); }
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateY(0); }
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateY(28px); }
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateY(0); }
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateY(8px); }
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0); } }
+  main .historia-container .historia-2 {
+    text-align: center;
+    margin: 50px; }
+    main .historia-container .historia-2 h2 {
+      font-size: 25px;
+      text-decoration: underline; }
+    main .historia-container .historia-2 p {
+      font-size: 20px;
+      text-align: justify;
+      margin: 30px; }
+
+/*--- EXPERIENCIAS --*/
+main .exp {
+  height: 170px;
+  width: 100%;
+  background-image: url("../img/exp.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 3px solid #29178f; }
+  main .exp h2 {
+    color: #197288;
+    font-size: 60px;
+    font-weight: 30;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline; }
+
+main .videos {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin: 30px; }
+  main .videos .exp-1 {
+    border: 2px solid black;
+    height: 610px;
+    width: 600px;
+    margin: 50px;
+    text-align: center;
+    animation: myAnim 2s ease 0s 1 normal none; }
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateX(-250px); }
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0); }
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(-68px); }
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0); }
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(-28px); }
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0); }
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(-8px); }
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateX(0); } }
+    main .videos .exp-1 iframe {
+      margin: 10px;
+      width: 480px;
+      height: 315px; }
+    main .videos .exp-1 h3 {
+      font-size: 25px;
+      text-decoration: underline; }
+    main .videos .exp-1 p {
+      font-size: 20px;
+      margin: 5px; }
+  main .videos .exp-2 {
+    text-align: center;
+    width: 900px;
+    margin: 50px; }
+
+/*--NOSOTROS--*/
+main .nosotros {
+  height: 170px;
+  width: 100%;
+  background-image: url("../img/nosotros.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 3px solid #29178f; }
+  main .nosotros h2 {
+    color: #197288;
+    font-size: 60px;
+    font-weight: 30;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline; }
+
+main .nos-container {
+  background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column; }
+  main .nos-container .parrafo {
+    font-size: 20px;
+    text-align: center;
+    width: 75%;
+    margin: 20px; }
+
+main .carousel-inner {
+  margin-bottom: 30px; }
+  main .carousel-inner div img {
+    width: 350px;
+    height: 350px; }
+
+/*--CONTACTO--*/
+main .contact-us {
+  height: 170px;
+  width: 100%;
+  background-image: url("../img/contacto.jpg");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: left;
+  background-size: 28%;
+  background-attachment: fixed;
+  border-bottom: 3px solid #29178f; }
+  main .contact-us h2 {
+    color: #197288;
+    font-size: 60px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline; }
+
+main .contacto-container {
+  background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-rows: 20% 25% 25% 25%; }
+  main .contacto-container .formulario {
+    margin: 20px;
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    background-color: #ced6d8;
+    text-align: center;
+    border: dashed 5px #197288;
+    border-radius: 3px; }
+    main .contacto-container .formulario form .mb-3 label {
+      font-size: 20px; }
+    main .contacto-container .formulario form .mb-3 input {
+      border: solid 2px black; }
+    main .contacto-container .formulario form .mb-3 textarea {
+      border: solid 2px black; }
+  main .contacto-container .texto {
+    grid-column: 2 / 4;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px; }
+  main .contacto-container .mapa {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .contacto-container .mapa iframe {
+      width: 500px;
+      height: 500px;
+      padding-bottom: 20px; }
+      main .contacto-container .mapa iframe p {
+        font-size: 20px;
+        text-align: center; }
+
+footer {
+  background-color: black;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  footer .derechos h4 {
+    color: white;
+    font-size: 23px;
+    margin: 10px; }
+  footer .redes a img {
+    height: 30px;
+    width: 30px;
+    margin: 5px; }
+
+@media screen and (max-width: 1080px) {
+  main .biode h3 {
+    font-size: 18px; }
+  main .nos-container .carousel-fade .carousel-inner div img {
+    width: 300px;
+    height: 300px; } }
+
+@media screen and (max-width: 900px) {
+  main .biode h3 {
+    font-size: 15px; }
+  main .contacto-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50%; }
+    main .contacto-container .formulario {
+      grid-column: span 1;
+      grid-row: span 1; }
+    main .contacto-container .texto {
+      grid-column: span 1;
+      grid-row: span 1; }
+      main .contacto-container .texto p {
+        font-size: 17px; }
+    main .contacto-container .mapa {
+      grid-column: span 1;
+      grid-row: span 1; }
+      main .contacto-container .mapa iframe {
+        width: 425px;
+        height: 325px; }
+  main .exp-2 h2 {
+    font-size: 55px; } }
+
+@media screen and (max-width: 850px) {
+  main .para div p {
+    padding: 10px; }
+  main .nos-container .parrafo {
+    font-size: 18px; }
+  main .contacto-container .texto p {
+    font-size: 15px; }
+  main .contacto-container .mapa iframe {
+    width: 350px;
+    height: 330px; } }
+
+@media screen and (max-width: 800px) {
+  main .biode h3 {
+    display: none; }
+  main .exp h2 {
+    font-size: 50px; } }
+
+@media screen and (max-width: 700px) {
+  main .biode {
+    height: 100px;
+    width: 100%;
+    border-bottom: 3px solid #29178f;
+    background-image: none; }
+    main .biode h2 {
+      font-size: 45px; }
+  main .para div h2 {
+    font-size: 22px; }
+  main .para div h3 {
+    font-size: 20px; }
+  main .para div p {
+    text-align: justify;
+    font-size: 18px; }
+  main .historia {
+    height: 100px;
+    width: 100%; }
+    main .historia h2 {
+      font-size: 45px; }
+  main .exp {
+    height: 100px;
+    width: 100%; }
+    main .exp h2 {
+      font-size: 38px; }
+  main .videos .exp-1 {
+    height: 560px;
+    width: 550px; }
+    main .videos .exp-1 iframe {
+      width: 430px;
+      height: 265px; }
+    main .videos .exp-1 div h3 {
+      font-size: 22px; }
+    main .videos .exp-1 div p {
+      font-size: 17px; }
+  main .videos .exp-2 p {
+    font-size: 17px; }
+  main .nosotros {
+    height: 100px;
+    width: 100%; }
+    main .nosotros h2 {
+      font-size: 45px; }
+  main .contact-us {
+    height: 100px;
+    width: 100%; }
+    main .contact-us h2 {
+      font-size: 45px; }
+  footer .derechos h4 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 650px) {
+  main .historia-container .historia-2 h2 {
+    font-size: 22px; }
+  main .historia-container .historia-2 p {
+    font-size: 18px;
+    margin: 15px; }
+  main .para img {
+    height: 550px;
+    width: 350px; } }
+
+@media screen and (max-width: 585px) {
+  main .fixed {
+    display: none; }
+  main .contacto-container .mapa iframe {
+    height: 280px;
+    width: 280px; }
+  footer {
+    flex-direction: column; } }
+
+@media screen and (max-width: 550px) {
+  main .para img {
+    height: 650px;
+    width: 450px; }
+  main .videos .exp-1 {
+    height: 510px;
+    width: 500px; }
+    main .videos .exp-1 iframe {
+      width: 390px;
+      height: 200px; }
+    main .videos .exp-1 div h3 {
+      font-size: 19px; }
+    main .videos .exp-1 div p {
+      font-size: 15px; }
+  main .videos .exp-2 p {
+    font-size: 15px; }
+  main .nos-container .carousel-fade .carousel-inner div img {
+    width: 280px;
+    height: 280px; }
+  main .contacto-container .formulario {
+    height: 100%; }
+  main .contacto-container .texto p {
+    font-size: 15px; }
+  main .contacto-container .mapa iframe {
+    width: 250px;
+    height: 250px; }
+  main .contacto-container .mapa p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 500px) {
+  main .para img {
+    height: 480px;
+    width: 280px; }
+  main .historia-container .historia {
+    margin: 20px; }
+    main .historia-container .historia h2 {
+      font-size: 20px; }
+    main .historia-container .historia p {
+      font-size: 17px; }
+  main .exp h2 {
+    font-size: 32px; }
+  main .videos .exp-1 {
+    height: 470px;
+    width: 450px; }
+    main .videos .exp-1 iframe {
+      width: 350px;
+      height: 220px; } }
+
+@media screen and (max-width: 450px) {
+  main .videos .exp-1 {
+    height: 520px;
+    width: 400px; }
+    main .videos .exp-1 iframe {
+      width: 300px;
+      height: 220px; }
+  main .nos-container .parrafo p {
+    font-size: 17px; }
+  main .nos-container .carousel-fade .carousel-inner div img {
+    width: 230px;
+    height: 230px; } }
+
+@media screen and (max-width: 400px) {
+  main .notas .notas-container .notas-flex img {
+    height: 150px;
+    width: 200px; }
+  main .notas .notas-container .notas-flex p {
+    font-size: 20px; }
+  main .historia-container .historia-2 {
+    margin: 25px; }
+    main .historia-container .historia-2 h2 {
+      font-size: 17px; }
+    main .historia-container .historia-2 p {
+      font-size: 14px; }
+  main .exp h2 {
+    font-size: 32px; }
+  main .videos .exp-1 {
+    height: 540px;
+    width: 300px; }
+    main .videos .exp-1 iframe {
+      width: 90%;
+      height: 100px; }
+  main .nos-container .parrafo p {
+    font-size: 15px; }
+  footer .derechos h4 {
+    font-size: 18px; } }

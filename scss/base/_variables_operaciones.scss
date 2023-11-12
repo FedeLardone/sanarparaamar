@@ -1,0 +1,14 @@
+/*----VARIABLES----*/
+
+$color-primario: rgb(41, 23, 143);
+$color-secundario: rgba(218, 229, 255, 0.973);
+$color-terciario:rgb(25, 114, 136);
+
+
+/*----MIXIN---*/
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

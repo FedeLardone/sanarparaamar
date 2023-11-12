@@ -1,0 +1,24 @@
+footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .derechos{
+        h4{
+            color: rgb(255, 255, 255);
+            font-size: 23px;
+            margin: 10px; 
+        }
+    }
+    .redes{
+        a{
+            img{
+                height: 30px;
+                width: 30px;
+                margin: 5px;
+            }
+        }
+    }
+}

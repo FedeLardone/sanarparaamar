@@ -1,0 +1,395 @@
+/*----INDEX----*/
+main{
+    .biode{
+        height: 170px;
+        width: 100%;
+        background-image: url("../img/bio.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 20%;
+        border-bottom:  3px solid rgb(41, 23, 143);
+        h2{
+            color: rgb(25, 114, 136);
+            font-size: 60px;
+            text-align: center;
+            font-style: italic;
+            text-decoration: underline;
+        }
+        h3{
+            font-size: 25px;
+            color: rgb(5, 22, 179);
+            text-align: center;
+            margin-right: 300px;
+            margin-left: 300px;
+        }
+    }
+    .para{
+        font-size: 20px;
+        text-align: center;
+        margin: 20px;
+        @include flex (flex, center, center);
+        flex-wrap: wrap;
+        background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center
+        center fixed;
+        background-size: cover;
+        div{
+            width: 800px;
+            h2{
+                font-size: 25px;
+                text-decoration: underline;
+            }
+            h3{
+                font-size: 22px;
+            }
+            p{
+                text-align: justify;
+                font-size: 20px;
+            }
+        }
+        img{
+            height: 700px;
+            width: 500px;
+        }
+    }
+    .notas{
+        h3{
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            background-color: rgb( 41, 23, 143);
+            text-align: center;
+            margin-bottom: 20px;
+            border: 2px solid rgb(0, 0, 0)
+        }
+        .notas-container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .notas-flex{
+                border: 2px solid rgb(0, 0, 0);
+                background-color: rgb(138, 135, 136);
+                margin-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow: 8px 10px 9px 0px rgba(0,0,0,0.57);
+                    -webkit-box-shadow: 8px 10px 9px 0px rgba(0,0,0,0.57);
+                    -moz-box-shadow: 8px 10px 9px 0px rgba(0,0,0,0.57);
+                }
+                img{
+                    height: 200px;
+                    width: 250px;
+                    margin: 5px;
+                }
+                a{
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .fixed{
+        position: fixed;
+        bottom: 100px;
+        right: 50px;
+    }
+}
+
+/*--- HISTORIA ----*/
+
+main{
+    .historia{
+        height: 170px;
+        width: 100%;
+        background-image: url("../img/historia.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        border-bottom:  3px solid rgb(41, 23, 143);
+        h2{
+            color: rgb(25, 114, 136);
+            font-size: 60px;
+            font-weight: 30;
+            text-align: center;
+            font-style: italic;
+            text-decoration: underline;   
+        }
+    }
+    .historia-container{
+        background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center
+        center fixed;
+        background-size: cover;
+        margin: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        animation: myAnim2 2s ease 0s 1 normal none;
+        @keyframes myAnim2 {
+            0% {
+                animation-timing-function: ease-in;
+                opacity: 0;
+                transform: translateY(250px);
+            }
+            38% {
+                animation-timing-function: ease-out;
+                opacity: 1;
+                transform: translateY(0);
+            }
+            38% {
+                animation-timing-function: ease-out;
+                opacity: 1;
+                transform: translateY(0);
+            }
+            72% {
+                animation-timing-function: ease-out;
+                transform: translateY(0);
+            }
+            81% {
+                animation-timing-function: ease-in;
+                transform: translateY(28px);
+            }
+            90% {
+                animation-timing-function: ease-out;
+                transform: translateY(0);
+            }
+            95% {
+                animation-timing-function: ease-in;
+                transform: translateY(8px);
+            }
+            100% {
+                animation-timing-function: ease-out;
+                transform: translateY(0);
+            }
+        }
+        .historia-2{
+            text-align: center;
+            margin: 50px;
+            h2{
+                font-size: 25px;
+                text-decoration: underline;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin: 30px;
+            }
+        }
+    }
+}
+
+/*--- EXPERIENCIAS --*/
+main{
+    .exp{
+        height: 170px;
+        width: 100%;
+        background-image: url("../img/exp.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        border-bottom:  3px solid rgb(41, 23, 143);
+        h2{
+            color: rgb(25, 114, 136);
+            font-size: 60px;
+            font-weight: 30;
+            text-align: center;
+            font-style: italic;
+            text-decoration: underline;
+        }
+    }
+    .videos{
+        font-size: 20px;
+        @include flex (flex, center, center);
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center
+        center fixed;
+        background-size: cover;
+        margin: 30px;
+        .exp-1{
+            border: 2px solid black;
+            height: 610px;
+            width: 600px;
+            margin: 50px;
+            text-align: center;
+            animation: myAnim 2s ease 0s 1 normal none;
+            @keyframes myAnim {
+                0% {
+                    animation-timing-function: ease-in;
+                    opacity: 0;
+                    transform: translateX(-250px);
+                }
+                38% {
+                    animation-timing-function: ease-out;
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+                55% {
+                    animation-timing-function: ease-in;
+                    transform: translateX(-68px);
+                }
+                72% {
+                    animation-timing-function: ease-out;
+                    transform: translateX(0);
+                }
+                81% {
+                    animation-timing-function: ease-in;
+                    transform: translateX(-28px);
+                }
+                90% {
+                    animation-timing-function: ease-out;
+                    transform: translateX(0);
+                }
+                95% {
+                    animation-timing-function: ease-in;
+                    transform: translateX(-8px);
+                }
+                100% {
+                    animation-timing-function: ease-out;
+                    transform: translateX(0);
+                }
+            }
+            iframe{
+                margin: 10px;
+                width: 480px; 
+                height: 315px
+            }
+            h3{
+                font-size: 25px;
+                text-decoration: underline;
+            }
+            p{
+                font-size: 20px;
+                margin: 5px;
+            }
+        }
+        .exp-2{
+            text-align: center;
+            width: 900px;
+            margin: 50px;
+        }
+    }
+}
+
+/*--NOSOTROS--*/
+main{
+    .nosotros{
+        height: 170px;
+        width: 100%;
+        background-image: url("../img/nosotros.jpg");
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-size: cover;
+        background-attachment: fixed;
+        border-bottom:  3px solid rgb(41, 23, 143);
+        h2{
+            color: rgb(25, 114, 136);
+            font-size: 60px;
+            font-weight: 30;
+            text-align: center;
+            font-style: italic;
+            text-decoration: underline;
+        }
+    }
+    .nos-container{
+        background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center
+        center fixed;
+        background-size: cover;
+        margin: 50px;
+        @include flex (flex, space-around, center);
+        flex-direction: column;
+        .parrafo{
+            font-size: 20px;
+            text-align: center;
+            width: 75%;
+            margin: 20px;
+        }
+    }
+    .carousel-inner{
+        margin-bottom: 30px;
+        div{
+            img{
+                width: 350px;
+                height: 350px;
+            }
+        }
+    }
+}
+
+/*--CONTACTO--*/
+main{
+    .contact-us{
+        height: 170px;
+        width: 100%;
+        background-image: url("../img/contacto.jpg");
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: left;
+        background-size: 28%;
+        background-attachment: fixed;
+        border-bottom:  3px solid rgb(41, 23, 143);
+        h2{
+            color: rgb(25, 114, 136);
+            font-size: 60px;
+            text-align: center;
+            font-style: italic;
+            text-decoration: underline;
+        }
+    }
+    .contacto-container{
+        background: linear-gradient(rgba(218, 229, 255, 0.973), rgba(218, 229, 255, 0.973)), url(../img/cielo.jpg) no-repeat center
+        center fixed;
+        background-size: cover;
+        margin: 30px;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr;
+        grid-template-rows: 20% 25% 25% 25%;
+        .formulario{
+            margin: 20px;
+            grid-row: 1 / 4;
+            grid-column: 1 / 2;
+            background-color: rgb(206, 214, 216);
+            text-align: center;
+            border: dashed 5px rgb(25, 114, 136);
+            border-radius: 3px;
+            form{
+                .mb-3{
+                    label{
+                        font-size: 20px;
+                    }
+                    input{
+                        border: solid 2px rgb(0, 0, 0);
+                    }
+                    textarea{
+                        border: solid 2px rgb(0, 0, 0);
+                    }
+                }
+            }
+        }
+        .texto{
+            grid-column: 2 / 4;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .mapa{
+            grid-column: 2 / 4;
+            grid-row: 2 / 4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            iframe{
+                width: 500px;
+                height: 500px;
+                padding-bottom: 20px;
+                p{
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

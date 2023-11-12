@@ -1,0 +1,28 @@
+header{
+    position: sticky;
+    top: 0;
+    .menu{
+        background-color: $color-primario;
+        div{
+            a{
+                font-size: 1.5rem;
+                color: rgb(255, 255, 255);
+            }
+            div{
+                ul{
+                    li{
+                        a{
+                            color: rgb(255, 255, 255);
+                            font-size: 20px;
+                        }
+                    }
+                    li{
+                        ul{
+                            background-color: $color-primario;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
