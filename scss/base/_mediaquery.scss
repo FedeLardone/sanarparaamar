@@ -329,6 +329,18 @@
             }
         }
     }
+    footer{
+        height: 110px;
+        .derechos{
+            h4{
+                padding-left: 50px;
+            }
+        }
+        .redes{
+            padding-right: 50px;
+            padding-bottom: 20px;
+        }
+    }
 }
 
 @media screen and (max-width:450px){

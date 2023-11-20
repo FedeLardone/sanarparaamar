@@ -101,7 +101,8 @@ main .notas .notas-container {
     main .notas .notas-container .notas-flex a {
       color: white;
       text-decoration: none;
-      font-size: 25px; }
+      font-size: 25px;
+      padding: 10px; }
 
 main .fixed {
   position: fixed;
@@ -114,7 +115,7 @@ main .historia {
   width: 100%;
   background-image: url("../img/historia.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-y: 180%;
   background-size: cover;
   background-attachment: fixed;
   border-bottom: 3px solid #29178f; }
@@ -179,7 +180,7 @@ main .exp {
   width: 100%;
   background-image: url("../img/exp.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-y: 700%;
   background-size: cover;
   background-attachment: fixed;
   border-bottom: 3px solid #29178f; }
@@ -357,11 +358,14 @@ footer {
   footer .derechos h4 {
     color: white;
     font-size: 23px;
-    margin: 10px; }
-  footer .redes a img {
-    height: 30px;
-    width: 30px;
-    margin: 5px; }
+    margin: 10px;
+    padding-left: 100px; }
+  footer .redes {
+    padding-right: 100px; }
+    footer .redes a img {
+      height: 30px;
+      width: 30px;
+      margin: 5px; }
 
 @media screen and (max-width: 1080px) {
   main .biode h3 {
@@ -525,7 +529,14 @@ footer {
     width: 450px; }
     main .videos .exp-1 iframe {
       width: 350px;
-      height: 220px; } }
+      height: 220px; }
+  footer {
+    height: 110px; }
+    footer .derechos h4 {
+      padding-left: 50px; }
+    footer .redes {
+      padding-right: 50px;
+      padding-bottom: 20px; } }
 
 @media screen and (max-width: 450px) {
   main .videos .exp-1 {

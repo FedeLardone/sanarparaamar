@@ -87,6 +87,7 @@ main{
                     color: rgb(255, 255, 255);
                     text-decoration: none;
                     font-size: 25px;
+                    padding: 10px;
                 }
             }
         }
@@ -106,7 +107,7 @@ main{
         width: 100%;
         background-image: url("../img/historia.jpg");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position-y: 180%;
         background-size: cover;
         background-attachment: fixed;
         border-bottom:  3px solid rgb(41, 23, 143);
@@ -187,7 +188,7 @@ main{
         width: 100%;
         background-image: url("../img/exp.jpg");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position-y: 700%;
         background-size: cover;
         background-attachment: fixed;
         border-bottom:  3px solid rgb(41, 23, 143);
