@@ -472,7 +472,9 @@ footer {
     margin: 15px; }
   main .para img {
     height: 550px;
-    width: 350px; } }
+    width: 350px; }
+  main .contacto-container .formulario {
+    height: 95%; } }
 
 @media screen and (max-width: 585px) {
   main .fixed {
